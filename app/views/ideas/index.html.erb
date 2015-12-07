@@ -11,9 +11,8 @@
     <% end %>
   </div>
 <% end %>
-
-<p><%= link_to 'New Idea', new_idea_path %></p>
-
-<p><%= paginate @ideas %></p>
-
+<div class="bottomlinks">
+  <p><%= link_to 'New Idea', new_idea_path %></p>
+  <p><%= link_to_next_page @ideas, 'Next' %></p>
+</div>
 
